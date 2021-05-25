@@ -25,11 +25,15 @@ export class TaskService {
     return this.http.get<Task[]>(this.apiUrl);
   }
 
-  deleteTask(task: Task): Observable<Task> {
-    return this.http.delete<Task>(`${this.apiUrl}/${task.id}`);
+  addTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task, httpOptions);
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
     return this.http.put<Task>(`${this.apiUrl}/${task.id}`, task, httpOptions);
+  }
+
+  deleteTask(task: Task): Observable<Task> {
+    return this.http.delete<Task>(`${this.apiUrl}/${task.id}`);
   }
 }
