@@ -1,10 +1,16 @@
 # NgTaskManager
 
 > Build a Task Manager on Angular 11
- 
+
+[![IMAGE ALT TEXT HERE](./uploads/screen.png)](https://nimb.ws/2twjST)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## JSON-SERVER
+
+Run `npm run server` for run json-server. Navigate to `http://localhost:5000/`.
 
 ## Code scaffolding
 
